@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's For Dinner</title>
+    <link rel="icon" type="pic/png" href="pic/favicon.png">
+    <link rel="stylesheet" href="../js assignment8/css/all.min.css">
+    <link rel="stylesheet" href="../js assignment8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../js assignment8/css/main.css">
+</head>
+
+<body>
+
+    <!----------------- start-nav-bar ------------------->
+
+    <nav class="navbar navbar-expand-lg nav-border sticky-top bg-white">
+        <div class="container-fluid px-lg-5 py-2 py-md-1 ">
+            <div class="d-flex align-items-center justify-content-center px-2">
+                <div class="logo d-flex align-items-center justify-content-center me-3 rounded-circle">
+                    <i class="fa-solid fa-utensils text-white fa-lg"></i>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="fw-bold brand-text lh-1 mb-1">What's For Dinner</span>
+                    <span class="brand-subtext text-muted">Your daily meal inspiration</span>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link nav-icon-link fs-5 " aria-current="page" href="#">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span class="d-inline d-md-none fs-6">Saved Recipes</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link nav-icon-link  fs-5" aria-current="page" href="#"><i
+                                class="fa-solid fa-clock-rotate-left"></i>
+                            <span class="d-inline d-md-none fs-6">Recent</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link nav-icon-link  fs-5" aria-current="page" href="#"><i
+                                class="fa-solid fa-gear"></i>
+                            <span class="d-inline d-md-none fs-6">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2 profile-avatar">
+                        <a class="nav-link nav-icon-link fs-5 d-flex align-items-center gap-3" aria-current="page"
+                            href="#">
+                            <img src="../js assignment8/pic/avatar-4.jpg" alt="User Profile" class="rounded-circle">
+                            <span class="d-inline d-md-none fs-6">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------- end-nav-bar ------------------->
+
+    <!------------------ start header  ----------------->
+
+    <header class="px-3 px-md-5 py-4 bgc-header">
+        <div class="container-fluid">
+            <div class="row overflow-hidden rounded-5  bg-white  border-card ">
+                <div class="col-md-5 px-0 position-relative">
+                    <img src="./pic/MediterraneanQuinoaBowl.jpg" alt="" class="w-100 object-fit-cover recipe-img"
+                        id="recipe-img">
+                    <div
+                        class="position-absolute top-0 start-0 m-4 bg-white rounded-pill px-3 py-2 shadow-sm d-flex align-items-center ">
+                        <i class="fa-solid fa-star text-warning small"></i>
+                        <span class="fw-medium text-dark mb-0 mx-2" id="review-rating">4.5</span>
+                        <span class="text-muted small fs-7" id="reviews">(156 reviews)</span>
+                    </div>
+                    <div
+                        class="position-absolute bottom-0 start-0 end-0 mx-auto mb-3 bg-white rounded-4 py-4 info-floating-card d-flex justify-content-around text-center">
+
+                        <div class="d-flex flex-column align-items-center px-3">
+                            <i class="fa-solid fa-clock text-orange mb-1 fs-4 orange"></i>
+                            <span class="fs-6 fw-normal lh-sm text-muted">Prep Time</span>
+                            <span class="fs-6 lh-base fw-bold text-dark" id="recipe-prep">20 min</span>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center px-3">
+                            <i class="fa-solid fa-fire-burner text-danger mb-1 fs-4"></i>
+                            <span class="fs-6 fw-normal lh-sm text-muted">Cook Time</span>
+                            <span class="fs-6 lh-base fw-bold text-dark" id="recipe-time">35 min</span>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center px-3">
+                            <i class="fa-solid fa-users text-primary mb-1 fs-4"></i>
+                            <span class="fs-6 fw-normal lh-sm text-muted">Servings</span>
+                            <span class="fs-6 lh-base fw-bold text-dark" id="recipe-serving">2 people</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-7 px-1 py-3 px-sm-2 py-sm-4 px-md-4 py-md-4 d-md-flex flex-md-column ">
+                    <div class="container text-dark bg-right scrollspy-example custom-scrollspy-box overflow-x-hidden overflow-x-md-hidden overflow-y-md-auto"
+                        tabindex="0">
+
+                        <div class="d-flex gap-2 mb-3">
+                            <span class="badge1 rounded-pill  px-3 py-1" id="badgeone">Easy</span>
+                            <span class="badge2 rounded-pill  px-3 py-1" id="badgetwo">Mediterranean</span>
+                        </div>
+
+
+                        <div class="d-flex justify-content-between align-items-center gap-3 mb-2">
+                            <h1 class="recipe-title fw-bold mb-0" id="recipe-title">Mediterranean Quinoa Bowl</h1>
+
+                            <div class="d-flex gap-2 ">
+                                <button class="btn btn-recipe-action" aria-label="Bookmark">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                </button>
+                                <button class="btn btn-recipe-action" aria-label="Share">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <p class="recipe-description text-muted mb-4" id="recipe-desc">
+                            Healthy bowl with quinoa, vegetables, and tahini dressing
+                        </p>
+
+                        <div id="recipe-alert-container">
+                            <div class="recipe-alert d-flex align-items-start gap-3 p-3 rounded-3 mb-4">
+                                <div class="alert-icon pt-1">
+                                    <i class="fa-solid fa-triangle-exclamation fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="alert-title mb-1 fs-6 lh-base fw-semibold">Extended Preparation Time</h6>
+                                    <p class="alert-text mb-0  small lh-sm">
+                                        This recipe requires more than 45 minutes to prepare. Plan accordingly!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="">
+                            <nav class="navvv  ">
+                                <div class="nav nav-tabs border-0 d-flex flex-nowrap justify-content-evenly"
+                                    id="nav-tab" role="tablist">
+                                    <button
+                                        class="nav-link active fw-semibold lh-base px-0 py-2 px-md-3 py-md-3 small fs-md-6 text-nowrap"
+                                        id="nav-ing-tab" data-bs-toggle="tab" data-bs-target="#nav-ing" type="button"
+                                        role="tab" aria-controls="nav-ing" aria-selected="true">
+                                        <i class="fa-solid fa-list-check me-0 me-md-1"></i> Ingredients
+                                    </button>
+
+                                    <button
+                                        class="nav-link fw-semibold lh-base px-0 py-2 px-md-3 py-md-3 small fs-md-6 text-nowrap"
+                                        id="nav-ins-tab" data-bs-toggle="tab" data-bs-target="#nav-ins" type="button"
+                                        role="tab" aria-controls="nav-ins" aria-selected="false">
+                                        <i class="fa-solid fa-book-open me-0 me-md-1"></i> Instructions
+                                    </button>
+
+                                    <button
+                                        class="nav-link fw-semibold lh-base px-0 py-2 px-md-3 py-md-3 small fs-md-6 text-nowrap"
+                                        id="nav-nut-tab" data-bs-toggle="tab" data-bs-target="#nav-nut" type="button"
+                                        role="tab" aria-controls="nav-nut" aria-selected="false">
+                                        <i class="fa-solid fa-chart-pie me-0 me-md-1"></i> Nutrition
+                                    </button>
+
+                                    <button
+                                        class="nav-link fw-semibold lh-base px-0 py-2 px-md-3 py-md-3 small fs-md-6 text-nowrap"
+                                        id="nav-tip-tab" data-bs-toggle="tab" data-bs-target="#nav-tip" type="button"
+                                        role="tab" aria-controls="nav-tip" aria-selected="false">
+                                        <i class="fa-solid fa-lightbulb me-0 me-md-1"></i> Chef's Tips
+                                    </button>
+
+                                </div>
+                            </nav>
+
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-ing" role="tabpanel"
+                                    aria-labelledby="nav-ing-tab" tabindex="0">
+
+                                    <div class="py-3">
+                                        <div class="border-top border-bottom py-4 ">
+                                            <div class="ingredients-card rounded-4 p-3 ">
+                                                <ul class="ingredients-list list-unstyled d-flex flex-column gap-3 mb-0"
+                                                    id="recipe-ingredients">
+
+                                                    <li class="d-flex align-items-center gap-3">
+                                                        <span
+                                                            class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold">1</span>
+                                                        <span class="ingredient-text">1 cup quinoa</span>
+                                                    </li>
+
+                                                    <li class="d-flex align-items-center gap-3">
+                                                        <span
+                                                            class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold">2</span>
+                                                        <span class="ingredient-text">Cherry tomatoes, halved</span>
+                                                    </li>
+
+                                                    <li class="d-flex align-items-center gap-3">
+                                                        <span
+                                                            class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold">3</span>
+                                                        <span class="ingredient-text">Cucumber, diced</span>
+                                                    </li>
+
+                                                    <li class="d-flex align-items-center gap-3">
+                                                        <span
+                                                            class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold">4</span>
+                                                        <span class="ingredient-text">Red onion, sliced</span>
+                                                    </li>
+
+                                                    <li class="d-flex align-items-center gap-3">
+                                                        <span
+                                                            class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold">5</span>
+                                                        <span class="ingredient-text">Kalamata olives</span>
+                                                    </li>
+
+                                                    <li class="d-flex align-items-center gap-3">
+                                                        <span
+                                                            class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold">6</span>
+                                                        <span class="ingredient-text">Feta cheese, crumbled</span>
+                                                    </li>
+
+                                                    <li class="d-flex align-items-center gap-3">
+                                                        <span
+                                                            class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold">7</span>
+                                                        <span class="ingredient-text">Fresh parsley</span>
+                                                    </li>
+
+                                                    <li class="d-flex align-items-center gap-3">
+                                                        <span
+                                                            class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold">8</span>
+                                                        <span class="ingredient-text">Tahini dressing</span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-ins" role="tabpanel" aria-labelledby="nav-ins-tab"
+                                    tabindex="0">
+                                    <div class=" py-3">
+                                        <div class=" border-top border-bottom py-4">
+                                            <div class="steps-scroll-container pe-3">
+                                                <ul class="list-unstyled d-flex flex-column gap-4 mb-0"
+                                                    id="recipe-instructions">
+
+
+                                                    <li class="d-flex align-items-start gap-3">
+                                                        <span class="step-squircle">1</span>
+                                                        <p class="step-desc mb-0">Rinse quinoa thoroughly. Cook
+                                                            according to package directions, usually 15 minutes.</p>
+                                                    </li>
+
+
+                                                    <li class="d-flex align-items-start gap-3">
+                                                        <span class="step-squircle">2</span>
+                                                        <p class="step-desc mb-0">While quinoa cooks, prepare all
+                                                            vegetables and set aside.</p>
+                                                    </li>
+
+
+                                                    <li class="d-flex align-items-start gap-3">
+                                                        <span class="step-squircle">3</span>
+                                                        <p class="step-desc mb-0">For tahini dressing: mix tahini, lemon
+                                                            juice, garlic, and water until smooth.</p>
+                                                    </li>
+
+
+                                                    <li class="d-flex align-items-start gap-3">
+                                                        <span class="step-squircle">4</span>
+                                                        <p class="step-desc mb-0">Fluff cooked quinoa with a fork and
+                                                            let cool slightly.</p>
+                                                    </li>
+
+
+                                                    <li class="d-flex align-items-start gap-3">
+                                                        <span class="step-squircle">5</span>
+                                                        <p class="step-desc mb-0">Arrange quinoa in bowls. Top with
+                                                            tomatoes, cucumber, onion, and olives.</p>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade " id="nav-nut" role="tabpanel" aria-labelledby="nav-nut-tab"
+                                    tabindex="0">
+                                    <div class=" py-3">
+                                        <div class=" border-top border-bottom py-4">
+
+                                            <div class="row g-3 mx-auto">
+
+                                                <div class="col-12 col-md-6">
+                                                    <div
+                                                        class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <div class="icon-squircle bg-calories">
+                                                                <i class="fa-solid fa-fire"></i>
+                                                            </div>
+                                                            <span
+                                                                class="nutrient-name fs-6 lh-base fw-semibold ">Calories</span>
+                                                        </div>
+                                                        <span class="nutrient-value fs-5 lh-base fw-bold text-dark"
+                                                            id="cal">480
+                                                            kcal</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-6">
+                                                    <div
+                                                        class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <div class="icon-squircle bg-protein">
+                                                                <i class="fa-solid fa-dumbbell"></i>
+                                                            </div>
+                                                            <span
+                                                                class="nutrient-name fs-6 lh-base fw-semibold ">Protein</span>
+                                                        </div>
+                                                        <span class="nutrient-value fs-5 lh-base fw-bold text-dark"
+                                                            id="pro">18g</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-6">
+                                                    <div
+                                                        class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <div class="icon-squircle bg-carbs">
+                                                                <i class="fa-solid fa-wheat-awn"></i>
+                                                            </div>
+                                                            <span
+                                                                class="nutrient-name fs-6 lh-base fw-semibold ">Carbohydrates</span>
+                                                        </div>
+                                                        <span class="nutrient-value fs-5 lh-base fw-bold text-dark"
+                                                            id="carb">58g</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-6">
+                                                    <div
+                                                        class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <div class="icon-squircle bg-fat">
+                                                                <i class="fa-solid fa-droplet"></i>
+                                                            </div>
+                                                            <span
+                                                                class="nutrient-name fs-6 lh-base fw-semibold ">Fat</span>
+                                                        </div>
+                                                        <span class="nutrient-value fs-5 lh-base fw-bold text-dark"
+                                                            id="fat">20g</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-6">
+                                                    <div
+                                                        class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <div class="icon-squircle bg-fiber">
+                                                                <i class="fa-solid fa-seedling"></i>
+                                                            </div>
+                                                            <span
+                                                                class="nutrient-name fs-6 lh-base fw-semibold ">Fiber</span>
+                                                        </div>
+                                                        <span class="nutrient-value fs-5 lh-base fw-bold text-dark"
+                                                            id="fiber">10g</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-6">
+                                                    <div
+                                                        class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <div class="icon-squircle bg-sodium">
+                                                                <i class="fa-solid fa-cube"></i>
+                                                            </div>
+                                                            <span
+                                                                class="nutrient-name fs-6 lh-base fw-semibold ">Sodium</span>
+                                                        </div>
+                                                        <span class="nutrient-value fs-5 lh-base fw-bold text-dark"
+                                                            id="sodium">540mg</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade " id="nav-tip" role="tabpanel" aria-labelledby="nav-tip-tab"
+                                    tabindex="0">
+                                    <div class=" py-3">
+                                        <div class=" border-top border-bottom py-4">
+                                            <div class="tips-container mx-auto d-flex flex-column gap-3"
+                                                id="recipe-tips">
+
+                                                <div class="tip-card d-flex align-items-center gap-3 p-3 rounded-3">
+                                                    <div class="tip-icon-wrapper">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </div>
+                                                    <p class="tip-text mb-0">Rinse quinoa well to remove bitter coating
+                                                    </p>
+                                                </div>
+
+                                                <div class="tip-card d-flex align-items-center gap-3 p-3 rounded-3">
+                                                    <div class="tip-icon-wrapper">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </div>
+                                                    <p class="tip-text mb-0">Let quinoa cool before adding fresh
+                                                        ingredients</p>
+                                                </div>
+
+                                                <div class="tip-card d-flex align-items-center gap-3 p-3 rounded-3">
+                                                    <div class="tip-icon-wrapper">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </div>
+                                                    <p class="tip-text mb-0">Make extra tahini dressing - it keeps well
+                                                        in the fridge</p>
+                                                </div>
+
+                                                <div class="tip-card d-flex align-items-center gap-3 p-3 rounded-3">
+                                                    <div class="tip-icon-wrapper">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </div>
+                                                    <p class="tip-text mb-0 fs-6 lh-base fw-normal">Add grilled chicken
+                                                        or chickpeas for extra
+                                                        protein</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button
+                            class="btn btn-recipe px-4 py-3 text-white fw-semibold d-flex align-items-center justify-content-between border-0 rounded-4 mb-2"
+                            onclick="displayRecipe()">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <p class="mb-0 ms-2">Try Another Recipe</p>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------------ end header  ----------------->
+
+
+    <script src="../js assignment8/js/bootstrap.bundle.min.js"></script>
+    <script src="../js assignment8/js/main.js"></script>
+</body>
+
+</html>

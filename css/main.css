@@ -1,0 +1,295 @@
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.brand-text {
+    color: #101828;
+    font-size: 1.5rem;
+}
+
+.brand-subtext {
+    font-size: 0.88rem;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #FF5A00, #FD4228);
+}
+
+.profile-avatar img {
+    width: 38px;
+    height: 38px;
+    border: 2px solid #FFB86A;
+    display: block;
+    object-fit: cover;
+}
+
+.navbar .navbar-nav .nav-item a.nav-icon-link {
+    transition: color 0.2s ease-in-out;
+    color: #4a5568;
+}
+
+.navbar .navbar-nav .nav-item a.nav-icon-link:hover {
+    color: #F54900;
+}
+
+.nav-border {
+    border-bottom: 2px solid #E7E2D6;
+}
+
+/* <!------------------ start header  -----------------> */
+
+.bgc-header {
+    background-color: #FFFAEB;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.border-card {
+    border: 1px solid #FFEDD4;
+}
+
+.info-floating-card {
+    width: 90%;
+    z-index: 2;
+}
+
+.orange {
+    color: #FF6900;
+}
+
+.recipe-img{
+    height: 700px;
+}
+
+@media (max-width: 900px) {
+    #recipe-img {
+        height: 500px; 
+    }
+
+    .nav-link{
+        font-size: 15px;
+    }
+}
+
+.badge1 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: #008236;
+    background-color: #DBFCE7;
+}
+
+.badge2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: #3447E8;
+    background-color: #DBEAFE;
+}
+
+.recipe-title {
+    color: #101828;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.btn-recipe-action {
+    background-color: #FFF3E5;
+    color: #F54900;
+    border: none;
+    width: 48px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-recipe-action:hover {
+    background-color: #FFD6A7;
+    color: #F54900;
+}
+
+.recipe-description {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #4a5565;
+}
+
+.recipe-alert {
+    background-color: #FFF5F5;
+    border-left: 4px solid#FB2C36;
+
+}
+
+.alert-icon {
+    color: #FB2C36;
+    font-size: 20px;
+}
+
+.alert-title {
+    color: #A50712;
+}
+
+.alert-text {
+    color: #e7000b;
+
+}
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    border: 0;
+    background-color: transparent;
+}
+
+nav.navvv .nav-tabs .nav-link {
+    color: #6c757d;
+    border-bottom: 2px solid transparent;
+}
+
+nav.navvv .nav-tabs .nav-link {
+    border-bottom: 2px solid transparent;
+}
+
+nav.navvv .nav-tabs .nav-link:hover {
+    color: #364153;
+    border-color: none;
+    background-color: transparent;
+}
+
+nav.navvv .nav-tabs .nav-link.active {
+    color: #EA580C;
+    border-color: #EA580C;
+    background-color: transparent;
+}
+
+.ingredients-card {
+    background-color: #FFF9EC;
+}
+
+.step-number {
+    background-color: #FF6900;
+    color: #ffffff;
+    font-size: 13px;
+    width: 28px;
+    height: 28px;
+}
+
+.step-squircle {
+    background-color: #ff6b00;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.step-desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #4b5563;
+    font-weight: 400;
+}
+
+.nutrition-card {
+    background-color: #F9FAFB;
+}
+
+.icon-squircle {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-calories {
+    background-color:#FFEDD4;
+    color: #F54900;
+}
+
+.bg-protein {
+    background-color: #DBEAFE;
+    color: #155DFC;
+}
+
+.bg-carbs {
+    background-color: #FEF9C2;
+    color:#D08700;
+}
+
+.bg-fat {
+    background-color:#FFE2E2;
+    color: #E7000B;
+}
+
+.bg-fiber {
+    background-color:#DBFCE7;
+    color: #00A63E;
+}
+
+.bg-sodium {
+    background-color: #FCE7F3;
+    color:#E60076;
+}
+
+
+.nutrient-name {
+    color:  oklch(0.373 0.034 259.733);
+}
+
+.tip-card {
+    background-color:#FFFBEB;
+    border-left: 5px solid #FFB900; 
+}
+
+.tip-icon-wrapper {
+    color:#E17100; 
+    font-size: 22px;
+}
+
+.tip-text {
+    color:oklch(0.373 0.034 259.733);       
+}
+
+
+.btn-recipe {
+  background: linear-gradient(135deg, #ff6b00 0%, #ff3b30 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-recipe:hover {
+  transform: scale(1.05);
+  color: #ffffff; 
+}
+
+.btn-recipe:active {
+  transform: scale(0.98);
+}
+
+.custom-scrollspy-box {
+    flex: 1 1 0; 
+    overflow-y: auto;
+}
+
+.custom-scrollspy-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollspy-box::-webkit-scrollbar-thumb {
+    background: #FEF2F2; 
+    border-radius: 10px;
+}
